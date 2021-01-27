@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Navbar Animation</title>
+    <link rel="stylesheet" href="../css/main.css" />
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="navbar">
+                <div class="menu">
+                    <h1 class="logo">R-STEPPS</h1>
+                    <div class="hamburger-menu">
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-container">
+                <div class="main">
+                    <header>
+                        <div class="overlay">
+                            <div class="inner">
+                                <h2 class="title">Future needs you</h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, suscipit.
+                                </p>
+                                <button class="btn">Read more</button>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="shadow one"></div>
+                <div class="shadow two"></div>
+            </div>
+
+            <div class="links">
+                <ul>
+                    <li>
+                        <a href="#" style="--i: 0.05s;">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" style="--i: 0.1s;">Robots</a>
+                    </li>
+                    <li>
+                        <a href="#" style="--i: 0.15s;">E-Forest</a>
+                    </li>
+                    <li>
+                        <a href="#" style="--i: 0.2s;">Press</a>
+                    </li>
+                    <li>
+                        <a href="#" style="--i: 0.25s;">Profil</a>
+                    </li>
+                    <li>
+                        <a href="#" style="--i: 0.3s;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+    <div class="titlechoice flex justifyC">
+        <h2>1 robot 1 mission</h2>
+    </div>
+
+    <div class="two-choice flex justifySA">
+        <img src="../img/robotearth.png" id="robotearth" alt="">
+        <img src="../img/robotree.png" id="robotree" alt="">
+    </div>
+
+    <div class="titlechoice flex justifyC">
+        <h2>Choose your Robot</h2>
+    </div>
+
+
+
+    <div class="backgroundRobot flex alignC flexDC">
+        <div class="imageRobot flex justifyC">
+            <img src="../img/ROBOT1.png" id="imageRobot" alt="">
+            <img src="../img/ROBOT1.png" id="textRobot" alt="">
+        </div>
+        <div class="boutonChoice flex justifySA">
+            <button class="myButton" id="btn1">Solar</button>
+            <button class="myButton" id="btn2">Water</button>
+            <button class="myButton" id="btn3">GPS</button>
+            <button class="myButton" id="btn4">Drig</button>
+            <button class="myButton" id="btn5">Launch</button>
+            <button class="myButton" id="btn6">Dry</button>
+        </div>
+    </div>
+    </div>
+
+
+    <button class="myButton" onClick="changevid('../img/video-presentation.mp4')">Video 1</button>
+    <button class="myButton" onClick="changevid('../img/Monument Valley - 310.mp4')">video 2</button>
+    <button class="myButton" onClick="changevid('../img/video-presentation.mp4')">Video 3</button>
+    <button class="myButton" onClick="changevid('../img/Monument Valley - 310.mp4')">video 2</button>
+
+
+    <section class="bannerVid">
+        <video controls id="videoRobot">
+  <source src="../img/video-presentation.mp4"type="video/mp4"></source>
+</video>
+    </section>
+
+
+
+
+
+
+
+
+
+    <div class="titzeb flex alignC justifyC flexDC">
+        <h1>WHAT IS R-STEPPS ?</h1>
+        <p>Né de la recherche universitaire et se concentrant sur les 40% du monde classés comme un environnement `` aride '', R-Stepps a le potentiel de planter des milliards d'arbres, de capter des millions de carbone et d'aider le monde à atteindre son
+            objectif de resurfaçage 3 % de la planète avec une nouvelle végétation.</p>
+    </div>
+
+
+
+
+
+    <div class="infosProjet flex justifySA flexWrap">
+        <div class="infoProjet1">
+            <a href="#"><img src="../img/parrainerRobot.png" alt=""></div>
+        </a>
+        <div class="infoProjet2">
+            <a href="#"><img src="../img/parrainerArbre.png" alt=""></div>
+        </a>
+        <div class="infoProjet2">
+            <a href="#"><img src="../img/planterArbre.png" alt=""></div>
+        </a>
+    </div>
+
+
+
+
+    <script src="../script/main.js"></script>
+</body>
+
+</html>

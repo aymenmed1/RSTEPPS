@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+   
+} 
+
+body{
+  overflow-x: hidden;
+}
+
+.navbar{
+  background: #081C15;
+}
+.fa-user-circle{
+    font-size: 30px;
+}
+
+
+
+.bannerio{ /* TAILLE DE LA BANNIERE */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.bannerio img{ /* IMAGE BANNIERE */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+}
+.bannerio .contentio{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+    
+}
+
+
+
+.bannerio .contentio h2{ /* TITRE DU SITE */
+    color: #fff;
+    font-size: 60px;
+}
+
+.bannerio .contentio p{ /* DESCRIPTION DU SITE */
+    color: #fff;
+    font-size: 18px;
+}
+
+.bannerio header{ /* POSITION DU LOGO */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+.bannerio header .logo{ /* STYLE DU LOGO */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+
+
+
+.about{ /* Position About */
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: #344E41;
+    
+}
+
+.about .contentBx{ /* Partie Gauche About */
+    background: #1B4332;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading{ /* Titre Partie Gauche About */
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.headingText{ /* Texte Partie Gauche About */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.about .imgBx{ /* Image Partie Droite About */
+    background: url(/img/aboutBanner.png);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttonRobot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.buttonRobot button{
+    margin: 15px 0;
+}
+
+.services{ /* SETUP DE LA PARTIE PARRAINAGE */
+    background: #3A5A40;
+    padding: 100px;
+    text-align: center;
+}
+
+.services .containero{ /* SETUP DE LA PARTIE PARRAINAGE */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+} 
+
+.services .containero .serviceBx{ /* SETUP DES CARRÉS DES PARRAINAGES */
+    position: relative;
+    
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.services .containero .serviceBx img{
+    width: 300px;
+    height: 300px;
+}
+
+/* .services .containero .serviceBx h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+} */
+
+.technology{
+    background: #588157;
+    width: 100%;
+    padding: 100px;
+    padding: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.technology .contentBx{
+    max-width: 800px;
+}
+
+.technology .imgBx{
+    
+    max-width: 250px;
+}
+
+.technology .imgBx img{
+    max-width: 100%;
+}
+
+.partenaires{
+    background: #2D6A4F;
+    padding: 100px;
+    
+}
+
+.partenaires .imgBx{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.partenaires .imgBx img{
+    max-width: 200px;
+    margin: 20px;
+    opacity: 0.50;
+    cursor: pointer;
+}
+
+.partenaires .imgBx img:hover{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.press{
+    position: relative;
+    padding: 100px;
+    background: #3E8E6A;
+    text-align: center;
+}
+
+.press .containero{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+.press .containero .contentBx{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    padding: 60px 50px;
+    width: 550px;
+}
+
+.press .containero .contentBx p{
+    font-style: italic;
+}
+.press .containero .contentBx h3{
+    width: 100%;
+    margin-top: 30px;
+    text-align: end;
+}
+
+.contact{
+    padding: 100px;
+    background: #ecf39e;
+    text-align: center;
+    
+    
+    
+}
+
+.imgBx2{
+    background: url(/img/contact-pic-tree.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+.redbg{
+    background: #80B918;
+    background-size: cover;
+    background-position: center;
+}
+
+.form .inputBx{
+     margin-bottom: 40px;
+}
+
+.form .inputBx input{
+    width: 100%;
+    background : transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBx input::placeholder{
+    color: #fff;
+}
+
+.form .inputBx textarea{
+    width: 100%;
+    background : transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    min-height: 150px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .inputBx textarea::placeholder{
+    color: #fff;
+}
+
+
+.form .inputBx input[type="submit"]{
+    width: 150px;
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+
+
+
+/* ---- CONFIGURE LE FLEX POUR LA CARD---- */
+
+.containera{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  
+}
+
+/* ---- CONFIGURE LE CONTOUR DE LA CARD---- */
+
+.containera .carda{
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  
+}
+
+
+/* ---- CONFIGURE L'INTERIEUR DE LA CARD---- */
+
+.containera .carda .contenta{
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+
+/* ---- CONFIGURE L'ANIMATION DE LA CARD AVEC LA MONTEE ET L'OPACITE---- */
+
+.containera .carda:hover .contenta{
+  opacity: 1;
+  transform: translateY(-20px);
+
+}
+
+/* ---- CONFIGURE LES IMAGES ET LA BORDURE---- */
+
+.containera .carda .contenta .imgArt{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
+
+}
+
+.containera .carda .contenta .imgArt img{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---- CONFIGURE LE NOM DE L'ARTISTE---- */
+
+.containera .carda .contenta .contentaArt h3{
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
+}
+
+/* ---- CONFIGURE LE STYLE DE MUSIQUE---- */
+
+.containera .carda .contenta .contentaArt h3 span{
+
+
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: initial;
+}
+
+/* ---- CONFIGURE LES ICONES DE RESEAUX---- */
+
+.containera .carda .sci {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  justify-content: center;
+  color: black;
+ 
+}
+
+/* ---- CONFIGURE LES ANIMATIONS DES ICONES DE RESEAUX---- */
+
+.containera .carda .sci li{
+  list-style: none; 
+  margin: 0 10px;
+  font-size: 20px;
+  transform: translateY(30px);
+  transition: 0.5s;
+  opacity: 0;
+  transition-delay: calc(0.1s * var(--i));
+  
+  
+}
+
+/* ---- CONFIGURE LES ANIMATIONS DES ICONES DE RESEAUX---- */
+
+.containera .carda:hover .sci li{
+  transform: translateY(10px);
+  opacity: 1;
+}
+
+/* ---- CONFIGURE LES ICONES DE RESEAUX---- */
+
+.containera .carda .sci li a {
+  color: black;
+  font-size: 24px;
+}
+
+
+#footer {
+    background: rgb(247,121,36);
+    background: linear-gradient(90deg, rgba(247,121,36,0.5592436803823091) 0%, rgba(136,59,223,0.6894958667060574) 100%); 
+    padding: 60px 0;
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    
+}
+
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li{
+	padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 991px){
+
+    .bannerio{
+        padding: 50px;
+    }
+
+
+    .bannerio header{
+        padding: 20px 50px;
+    }
+
+    .bannerio header h2{
+        font-size: 36px;
+    }
+
+    .bannerio .contentio p{
+        color: #fff;
+        font-size: 18px;
+    }
+
+    .about{
+        flex-direction: column;
+    }
+
+    .about .contentBx, .about .imgBx{
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center; 
+    }
+
+    .services{
+        padding: 50px;
+    }
+
+    .services .containero{
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .services .containero .serviceBx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+
+    .technology{
+        padding: 50px;
+        padding-top: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .technology .imgBx{
+        margin-top: 40px;
+        max-width: 250px;
+    }
+
+    .partenaires{
+        padding: 50px;
+    }
+
+    .partenaires .imgBx{
+        justify-content: center;
+    }
+
+    .press{
+        padding: 50px;
+    }
+
+    .press .contentBx{
+        padding: 60px 40px;
+        max-width: 550px;
+        margin-bottom: 40px;
+    }
+    .press .contentBx:last-child{
+        margin-bottom: 0px;
+    }
+
+    .contact{
+        padding: 50px;
+    }
+
+
+}

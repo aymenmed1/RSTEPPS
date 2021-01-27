@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93585804ff.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- --- LIEN BOOTSTRAP --- -->
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="banner-video">
+        <div class="content-video">
+            <img src="../img/robotmars.jpg" alt="">
+            <h2>Video On click Pop Up</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam recusandae autem dicta pariatur. Esse quaerat dignissimos possimus ipsam harum ab veritatis quisquam quasi nulla modi earum exercitationem, ratione placeat eius ea alias accusantium
+                quis architecto!</p>
+            <a href="#" class="watch-trailer" onclick="toggle()" ;>Watch the trailer</a>
+        </div>
+    </div>
+
+    <div class="trailer-video">
+        <video src="../img/mreazivideo.mp4" controls="true"></video>
+        <img src="../img/close-button.png" class="close" onclick="toggle()" ; alt="">
+    </div>
+
+    <script type="text/javascript">
+        function toggle() {
+            let close = document.querySelector(".close");
+            let trailer = document.querySelector(".trailer-video");
+            trailer.classList.toggle("active");
+
+        }
+    </script>
+</body>
+
+</html>
